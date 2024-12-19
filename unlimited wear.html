@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlimited Wear - Ruházat</title>
+    <link rel="stylesheet" href="unlimited wear.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="logo">
+            <h1>Unlimited Wear</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Kezdőlap</a></li>
+                    <li><a href="#products">Termékek</a></li>
+                    <li><a href="#about">Rólunk</a></li>
+                    <li><a href="#contact">Kapcsolat</a></li>
+                    <li><a href="#cart">Kosár</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+  
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2>Üdvözlünk az Unlimited Wear weboldalán!</h2>
+                <p>A legújabb trendek és kényelmes viselet minden alkalomra.</p>
+            </div>
+        </section>
+
+        
+        <section id="products" class="product-section">
+            <h2>Legújabb Termékeink</h2>
+            <div class="product-grid">
+               
+                <div class="product">
+                    <img src="fekete polo kész e.png" alt="Póló">
+                    <h3>Póló</h3>
+                    <p class="product-description">Ez a kényelmes és stílusos póló minden alkalomra tökéletes választás. Kiváló minőségű pamut anyagból készült.</p>
+                    <p class="price">Ár: 5990 Ft</p>
+                    <button class="order-button">Rendelés</button>
+                </div>
+               
+                <div class="product">
+                    <img src="Fekete rövid nadrág eleje kész.png" alt="Nadrág">
+                    <h3>Nadrág</h3>
+                    <p class="product-description">Ez a férfias, de kényelmes nadrág tökéletes a hétköznapi és sportos megjelenéshez. Prémium anyagból készült.</p>
+                    <p class="price">Ár: 8990 Ft</p>
+                    <button class="order-button">Rendelés</button>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="about" class="about-section">
+            <h2>Miért válaszd az Unlimited Wear-t?</h2>
+            <p>Az Unlimited Wear márka a minőség, stílus és kényelem ötvözésére épít. A ruháinkat úgy terveztük, hogy bármilyen alkalomra tökéletesen passzoljanak, és maximális kényelmet biztosítsanak viselőiknek. Különleges anyagok, divatos színek és tökéletes szabás jellemzik minden egyes darabunkat.</p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>Minőség</h3>
+                    <p>Csak a legjobb alapanyagokat használjuk, hogy hosszú távon élvezhesd termékeinket.</p>
+                </div>
+                <div class="about-item">
+                    <h3>Stílus</h3>
+                    <p>Legújabb trendeknek megfelelő, modern dizájnnal várunk mindenkit.</p>
+                </div>
+                <div class="about-item">
+                    <h3>Kényelem</h3>
+                    <p>Ruháink maximális kényelmet biztosítanak, így egész nap jól érezheted magad bennük.</p>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="reviews" class="reviews-section">
+            <h2>Vásárlói Vélemények</h2>
+            <div class="review">
+                <p>"Az Unlimited Wear termékek a legjobb választásom volt! A póló rendkívül kényelmes és a nadrág is tökéletesen illeszkedik!"</p>
+                <p><strong>Nagy Gábor</strong></p>
+            </div>
+            <div class="review">
+                <p>"Minden darab, amit vásároltam, fantasztikus minőségű. Különösen szeretem a színeket és a fazonokat!"</p>
+                <p><strong>Gábori Anna</strong></p>
+            </div>
+        </section>
+
+   
+        <section id="cart" class="cart-section">
+            <h2>Kosár</h2>
+            <p>Jelenleg nincs a kosárban semmi.</p>
+            <button class="checkout-button">Pénztár</button>
+        </section>
+
+        
+        <section class="contact-section">
+            <h2>Kapcsolat</h2>
+            <p>Ha bármilyen kérdése van, ne habozzon kapcsolatba lépni velünk!</p>
+            
+            <form id="contact-form">
+                <label for="name">Név:</label>
+                <input type="text" id="name" name="name" required placeholder="Írja be a nevét">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Írja be az email címét">
+                
+                  <label for="message">Üzenet:</label>
+                <textarea id="message" name="message" required placeholder="Írja be üzenetét"></textarea>
+                
+                <button type="submit" class="submit-button">Küldés</button>
+            </form>
+        
+            
+            <div id="response-message" style="display: none; color: green; margin-top: 20px;">
+                <p>Üzenet elküldve!</p>
+            </div>
+        </section>
+        
+    <footer>
+        
+        <p><a href="#contact">Kapcsolat</a> | <a href="#about">Rólunk</a> | <a href="#products">Termékek</a></p>
+    </footer>
+    <script> 
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    
+    event.preventDefault();
+
+    
+    var responseMessage = document.getElementById("response-message");
+    responseMessage.style.display = "block"; 
+    
+    
+    setTimeout(function() {
+        responseMessage.style.display = "none";
+    }, 3000);
+});</script>
+
+</body>
+</html>
